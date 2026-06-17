@@ -1,0 +1,50 @@
+{
+  "configurations" : [
+    {
+      "id" : "7F6AC010-C294-46E9-952E-749A5FC406CF",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:UniversitiesBrowserApp.xcodeproj",
+      "identifier" : "F51F47102FE1499000760D95",
+      "name" : "UniversitiesBrowserApp"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:UniversitiesBrowserApp\/Packages\/DataKit",
+        "identifier" : "DataKitTests",
+        "name" : "DataKitTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:UniversitiesBrowserApp\/Packages\/ListingFeature",
+        "identifier" : "ListingFeatureTests",
+        "name" : "ListingFeatureTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:UniversitiesBrowserApp\/Packages\/NetworkKit",
+        "identifier" : "NetworkKitTests",
+        "name" : "NetworkKitTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:UniversitiesBrowserApp\/Packages\/DetailsFeature",
+        "identifier" : "DetailsFeatureTests",
+        "name" : "DetailsFeatureTests"
+      }
+    }
+  ],
+  "version" : 1
+}

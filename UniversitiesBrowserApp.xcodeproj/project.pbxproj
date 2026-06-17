@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F53E53E22FE14F3E00496DCD /* CommonUI in Frameworks */ = {isa = PBXBuildFile; productRef = F53E53E12FE14F3E00496DCD /* CommonUI */; };
+		F53E53E42FE14F3E00496DCD /* DetailsFeature in Frameworks */ = {isa = PBXBuildFile; productRef = F53E53E32FE14F3E00496DCD /* DetailsFeature */; };
+		F53E53E62FE14F3E00496DCD /* DomainKit in Frameworks */ = {isa = PBXBuildFile; productRef = F53E53E52FE14F3E00496DCD /* DomainKit */; };
+		F53E53E82FE14F3E00496DCD /* ListingFeature in Frameworks */ = {isa = PBXBuildFile; productRef = F53E53E72FE14F3E00496DCD /* ListingFeature */; };
+		F53E53EA2FE14F3E00496DCD /* NetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = F53E53E92FE14F3E00496DCD /* NetworkKit */; };
+		F53E53EC2FE14F3E00496DCD /* PersistenceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F53E53EB2FE14F3E00496DCD /* PersistenceKit */; };
+		F5CADF032FE2887E00EA11DD /* DataKit in Frameworks */ = {isa = PBXBuildFile; productRef = F5CADF022FE2887E00EA11DD /* DataKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F51F47282FE1499400760D95 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +37,7 @@
 		F51F47112FE1499000760D95 /* UniversitiesBrowserApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniversitiesBrowserApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51F47272FE1499400760D95 /* UniversitiesBrowserAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniversitiesBrowserAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51F47312FE1499500760D95 /* UniversitiesBrowserAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniversitiesBrowserAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F567563D2FE2AA3A00471AE0 /* UniversitiesBrowserApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UniversitiesBrowserApp.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -48,16 +59,6 @@
 			path = UniversitiesBrowserApp;
 			sourceTree = "<group>";
 		};
-		F51F472A2FE1499400760D95 /* UniversitiesBrowserAppTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = UniversitiesBrowserAppTests;
-			sourceTree = "<group>";
-		};
-		F51F47342FE1499500760D95 /* UniversitiesBrowserAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = UniversitiesBrowserAppUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +66,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5CADF032FE2887E00EA11DD /* DataKit in Frameworks */,
+				F53E53E82FE14F3E00496DCD /* ListingFeature in Frameworks */,
+				F53E53E42FE14F3E00496DCD /* DetailsFeature in Frameworks */,
+				F53E53E22FE14F3E00496DCD /* CommonUI in Frameworks */,
+				F53E53EA2FE14F3E00496DCD /* NetworkKit in Frameworks */,
+				F53E53E62FE14F3E00496DCD /* DomainKit in Frameworks */,
+				F53E53EC2FE14F3E00496DCD /* PersistenceKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,9 +96,9 @@
 		F51F47082FE1499000760D95 = {
 			isa = PBXGroup;
 			children = (
+				F567563D2FE2AA3A00471AE0 /* UniversitiesBrowserApp.xctestplan */,
 				F51F47132FE1499000760D95 /* UniversitiesBrowserApp */,
-				F51F472A2FE1499400760D95 /* UniversitiesBrowserAppTests */,
-				F51F47342FE1499500760D95 /* UniversitiesBrowserAppUITests */,
+				F53E53E02FE14F3E00496DCD /* Frameworks */,
 				F51F47122FE1499000760D95 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +111,13 @@
 				F51F47312FE1499500760D95 /* UniversitiesBrowserAppUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F53E53E02FE14F3E00496DCD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +140,13 @@
 			);
 			name = UniversitiesBrowserApp;
 			packageProductDependencies = (
+				F53E53E12FE14F3E00496DCD /* CommonUI */,
+				F53E53E32FE14F3E00496DCD /* DetailsFeature */,
+				F53E53E52FE14F3E00496DCD /* DomainKit */,
+				F53E53E72FE14F3E00496DCD /* ListingFeature */,
+				F53E53E92FE14F3E00496DCD /* NetworkKit */,
+				F53E53EB2FE14F3E00496DCD /* PersistenceKit */,
+				F5CADF022FE2887E00EA11DD /* DataKit */,
 			);
 			productName = UniversitiesBrowserApp;
 			productReference = F51F47112FE1499000760D95 /* UniversitiesBrowserApp.app */;
@@ -142,9 +164,6 @@
 			);
 			dependencies = (
 				F51F47292FE1499400760D95 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				F51F472A2FE1499400760D95 /* UniversitiesBrowserAppTests */,
 			);
 			name = UniversitiesBrowserAppTests;
 			packageProductDependencies = (
@@ -165,9 +184,6 @@
 			);
 			dependencies = (
 				F51F47332FE1499500760D95 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				F51F47342FE1499500760D95 /* UniversitiesBrowserAppUITests */,
 			);
 			name = UniversitiesBrowserAppUITests;
 			packageProductDependencies = (
@@ -294,9 +310,10 @@
 				INFOPLIST_FILE = UniversitiesBrowserApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,9 +343,10 @@
 				INFOPLIST_FILE = UniversitiesBrowserApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -591,6 +609,37 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F53E53E12FE14F3E00496DCD /* CommonUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CommonUI;
+		};
+		F53E53E32FE14F3E00496DCD /* DetailsFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DetailsFeature;
+		};
+		F53E53E52FE14F3E00496DCD /* DomainKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DomainKit;
+		};
+		F53E53E72FE14F3E00496DCD /* ListingFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ListingFeature;
+		};
+		F53E53E92FE14F3E00496DCD /* NetworkKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NetworkKit;
+		};
+		F53E53EB2FE14F3E00496DCD /* PersistenceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PersistenceKit;
+		};
+		F5CADF022FE2887E00EA11DD /* DataKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DataKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F51F47092FE1499000760D95 /* Project object */;
 }
