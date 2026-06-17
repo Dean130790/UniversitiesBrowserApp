@@ -11,6 +11,7 @@ import DomainKit
 extension University {
     static let mock = University(
         id: "1",
+        alphaTwoCode: "AE",
         name: "American University of Sharjah",
         country: "United Arab Emirates",
         stateProvince: nil,

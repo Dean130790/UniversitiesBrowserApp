@@ -89,6 +89,7 @@ final class ListingPresenterTests: XCTestCase {
         )
 
         await presenter.refreshUniversities()
+        await Task.yield()
         XCTAssertTrue(interactor.refreshCalled)
         guard case let .loaded(universities) = presenter.state else {
             XCTFail("Expected loaded state")

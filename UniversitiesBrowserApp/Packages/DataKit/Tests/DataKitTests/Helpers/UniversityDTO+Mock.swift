@@ -10,6 +10,7 @@ import NetworkKit
 
 extension UniversityDTO {
     static let mock = UniversityDTO(
+        alphaTwoCode: "AE",
         country: "United Arab Emirates",
         domains: [
             "aus.edu"

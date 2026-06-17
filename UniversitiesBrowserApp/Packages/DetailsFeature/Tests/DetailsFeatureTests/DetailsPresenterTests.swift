@@ -58,6 +58,7 @@ final class DetailsPresenterTests: XCTestCase {
 
         let updated = University(
             id: original.id,
+            alphaTwoCode: original.alphaTwoCode,
             name: "Updated University",
             country: original.country,
             stateProvince: original.stateProvince,
@@ -87,6 +88,7 @@ final class DetailsPresenterTests: XCTestCase {
 
         let differentUniversity = University(
             id: "different-id",
+            alphaTwoCode: "AE",
             name: "Another University",
             country: "United Arab Emirates",
             stateProvince: nil,
