@@ -23,6 +23,9 @@ public struct ListingView: View {
             .task {
                 presenter.load()
             }
+            .onDisappear {
+                presenter.fetchTask?.cancel()
+            }
     }
 }
 

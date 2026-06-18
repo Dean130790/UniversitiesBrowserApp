@@ -22,6 +22,7 @@ public final class ListingPresenter: ObservableObject, RefreshCoordinator {
 
     private var cancellables = Set<AnyCancellable>()
 
+    var fetchTask: Task<Void, Never>?
     private var hasFetched = false
 
 
@@ -54,12 +55,16 @@ extension ListingPresenter {
     public func load() {
         guard !hasFetched else { return }
 
-        Task {
+        fetchTask?.cancel()
+        fetchTask = Task {
             state = .loading
             do {
                 let universities = try await interactor.loadUniversities()
+                guard !Task.isCancelled else { return }
                 updateStore(universities)
                 hasFetched = true
+            } catch is CancellationError {
+                return
             } catch {
                 state = .error(error.localizedDescription)
             }
@@ -69,12 +74,18 @@ extension ListingPresenter {
 
 extension ListingPresenter {
     public func refreshUniversities() async {
-        state = .loading
-        do {
-            let universities = try await interactor.refreshUniversities()
-            updateStore(universities)
-        } catch {
-            state = .error(error.localizedDescription)
+        fetchTask?.cancel()
+        fetchTask = Task {
+            state = .loading
+            do {
+                let universities = try await interactor.refreshUniversities()
+                guard !Task.isCancelled else { return }
+                updateStore(universities)
+            } catch is CancellationError {
+                return
+            } catch {
+                state = .error(error.localizedDescription)
+            }
         }
     }
 }
